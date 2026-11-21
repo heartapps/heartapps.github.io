@@ -1,0 +1,116 @@
+/* Mentor Heart: the app's "Morning Kolam" look. Lavender-white ground by day, ink after dark, the
+   heart pink for the one action, the kolam night for "Get it". Baloo 2 on the titles, the phone's own
+   sans for reading, as in the app. Colours match the app's src/lib/theme.ts. */
+:root {
+  --bg: #F3F2F7;
+  --surface: #FFFFFF;
+  --surface-2: #ECEAF3;
+  --ink: #1C1A24;
+  --muted: #4E4B5C;
+  --accent: #C2185B;
+  --accent-ink: #FFFFFF;
+  --accent-hover: #A8144F;
+  --field: #15123A;
+  --field-ink: #F7F5FF;
+  --lamp: #FFD58A;
+  --font-display: 'Baloo 2', system-ui, sans-serif;
+  --font-text: system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans', sans-serif;
+  --display-weight: 800;
+  --display-track: -0.025em;
+  --display-case: none;
+  --s-h1: clamp(2.75rem, 1.2rem + 5.2vw, 5.75rem);
+  --shadow: 0 30px 70px -30px rgb(36 28 64 / 0.38);
+  /* The six day orders, as on Today. */
+  --day-a: #B4432A;
+  --day-b: #157F45;
+  --day-c: #0B7A9A;
+  --day-d: #4338CA;
+  --day-e: #7C3AED;
+  --day-f: #BE123C;
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #100F15;
+    --surface: #1A1922;
+    --surface-2: #25242F;
+    --ink: #F2F1F7;
+    --muted: #B8B5C6;
+    --accent: #FF7AAE;
+    --accent-ink: #2A0A18;
+    --accent-hover: #FF96C0;
+    --field: #2B1748;
+    --field-ink: #F7F5FF;
+    --shadow: 0 30px 70px -28px rgb(0 0 0 / 0.6);
+    --day-a: #FDA98F;
+    --day-b: #7BD9A4;
+    --day-c: #7FD3EA;
+    --day-d: #A9A4FA;
+    --day-e: #C4A8FB;
+    --day-f: #FB9AB2;
+  }
+}
+
+.brand { font-size: 1.375rem; line-height: 1; }
+.brand img { border-radius: 11px; }
+.h1 em, .h2 em { font-style: normal; color: var(--accent); }
+.hero .phone { width: min(100%, 340px); }
+
+/* The six day orders, a row of rings: the one the college runs on today is filled. */
+.days { display: flex; gap: 10px; }
+.days span { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; border: 2px solid var(--d); color: var(--d); font: 800 1.0625rem/1 var(--font-display); }
+.days span:nth-child(1) { --d: var(--day-a); }
+.days span:nth-child(2) { --d: var(--day-b); }
+.days span:nth-child(3) { --d: var(--day-c); background: var(--d); color: var(--bg); }
+.days span:nth-child(4) { --d: var(--day-d); }
+.days span:nth-child(5) { --d: var(--day-e); }
+.days span:nth-child(6) { --d: var(--day-f); }
+
+/* Two ways to get it, side by side under the title. */
+.hero .actions .link { font-weight: 600; }
+
+/* How to join and how to put it on an iPhone: numbered steps. */
+.steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--gap); counter-reset: step; }
+.steps li { position: relative; display: grid; gap: 10px; align-content: start; padding: 26px 24px 28px; border-radius: var(--radius); background: var(--surface); box-shadow: inset 0 0 0 1px var(--line); counter-increment: step; }
+.steps li::before { content: counter(step); display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: color-mix(in srgb, var(--accent) 14%, transparent); color: var(--accent); font: 800 1.25rem/1 var(--font-display); }
+.steps strong { font-size: 1.125rem; }
+.steps p { color: var(--muted); }
+.steps-note { margin-top: 22px; color: var(--muted); max-width: 60ch; }
+
+/* The iPhone section: steps beside the web app's address. */
+.iphone { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: var(--gap); align-items: start; }
+.iphone .head { margin: 0; }
+.iphone .steps { grid-template-columns: 1fr; }
+.address { display: inline-flex; align-items: center; gap: 10px; min-height: 52px; padding: 0 22px; border-radius: 999px; background: var(--surface); box-shadow: inset 0 0 0 1px var(--line-strong); font-weight: 700; text-decoration: none; overflow-wrap: anywhere; }
+.address::after { content: '→'; color: var(--accent); }
+
+/* The night "Get it" field: the lamp's warm gold for small marks. */
+.get .way-main .go { color: var(--field); }
+.way-mark { display: grid; place-items: center; width: 48px; height: 48px; border-radius: 12px; background: color-mix(in srgb, var(--field-ink) 14%, transparent); color: var(--lamp); font: 800 1rem/1 var(--font-display); }
+.way-mark svg { width: 26px; height: 26px; fill: currentColor; }
+
+/* Pages of plain text: the privacy policy. */
+.doc { max-width: 46rem; padding-block: clamp(3rem, 7vw, 6rem); }
+.doc h1 { margin-bottom: 18px; }
+.doc .lede { max-width: 40ch; }
+.doc-date { margin-top: 14px; color: var(--muted); font-size: var(--s-small); }
+.doc-body { margin-top: clamp(2.5rem, 5vw, 4rem); }
+.doc-body h2 { font: var(--display-weight) var(--s-head)/1.2 var(--font-display); margin: 2.4em 0 0.6em; }
+.doc-body h2:first-child { margin-top: 0; }
+.doc-body p + p, .doc-body p + ul, .doc-body ul + p { margin-top: 0.9em; }
+.doc-body ul { display: grid; gap: 10px; padding-left: 1.2em; list-style: disc; }
+.doc-body a { color: var(--accent); text-underline-offset: 3px; }
+.doc-body b { font-weight: 700; }
+.doc-note { margin-top: 1.2em; padding: 18px 20px; border-radius: 20px; background: var(--surface-2); }
+
+@media (max-width: 960px) {
+  .hero { grid-template-columns: 1fr; gap: 48px; }
+  .steps { grid-template-columns: 1fr; }
+  .iphone { grid-template-columns: 1fr; gap: 32px; }
+}
+@media (max-width: 680px) {
+  .hero .phone { width: min(78%, 320px); }
+  .days { gap: 8px; }
+  .days span { width: 36px; height: 36px; font-size: 1rem; }
+}
