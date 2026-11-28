@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Mentor Heart · Your college department's day, timetable and mentoring</title>
+  <meta name="description" content="Mentor Heart is a free app for a college department: today's day order and class, the timetable, announcements, assignments and marks, leave, goals and mentoring, for students and professors. Android app, and a web app for iPhone. No ads.">
+  <meta name="theme-color" content="#F3F2F7" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#100F15" media="(prefers-color-scheme: dark)">
+  <meta property="og:title" content="Mentor Heart">
+  <meta property="og:description" content="Your department's day, timetable and mentoring, in one app. Free, no ads.">
+  <meta property="og:image" content="https://heartapps.github.io/mentor-heart/assets/screens/today.webp">
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="heart.css">
+  <link rel="stylesheet" href="theme.css">
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<main id="top">
+
+  <header class="bar wrap">
+    <a class="brand" href="#top" aria-label="Mentor Heart, back to top"><img src="assets/icon.png" width="40" height="40" alt="">Mentor Heart</a>
+    <nav aria-label="Sections">
+      <a href="#features">Features</a>
+      <a href="#join">Join</a>
+      <a href="#iphone">iPhone</a>
+      <a href="#questions">Questions</a>
+      <a href="docs/">Help</a>
+    </nav>
+    <a class="button button-small" href="#get">Get the app</a>
+  </header>
+
+  <!-- The promise, beside Today -->
+  <section class="hero wrap" aria-labelledby="hero-title">
+    <div class="hero-text">
+      <h1 id="hero-title" class="h1" data-reveal>Your department’s day, <em>in one place</em></h1>
+      <p class="lede" data-reveal style="--i:1">Today’s day order and the class on now, the timetable, announcements, assignments and marks, and your mentor. For the students and professors of your department.</p>
+      <div class="days" data-reveal style="--i:2" aria-hidden="true"><span>A</span><span>B</span><span>C</span><span>D</span><span>E</span><span>F</span></div>
+      <p class="actions" data-reveal style="--i:3">
+        <a class="button" href="https://play.google.com/store/apps/details?id=com.inigocode.mentorheart">Get it on Google Play</a>
+        <a class="link" href="#iphone">On an iPhone? Use the web app</a>
+      </p>
+      <ul class="facts" data-reveal style="--i:4"><li>Free, no ads</li><li>Android and iPhone</li><li>Students and professors</li></ul>
+    </div>
+    <figure class="hero-media"><div class="phone" data-reveal style="--i:2"><img src="assets/screens/today.webp" width="824" height="1830" alt="Today for a student: day order C on Thursday, 19 Nov, free till 10:40 am with Digital Marketing next, a classmate's birthday, the week's day orders and today's classes" fetchpriority="high"></div></figure>
+  </section>
+
+  <!-- What it does -->
+  <section id="features" class="section wrap" aria-labelledby="features-title">
+    <div class="head">
+      <h2 id="features-title" class="h2" data-reveal>The whole college day</h2>
+      <p data-reveal style="--i:1">A college runs on day orders, not weekdays. Mentor Heart knows which day it is, which class is on, and what the department wants you to know.</p>
+    </div>
+    <div class="rows">
+      <article class="row" aria-labelledby="f1">
+        <div class="row-text">
+          <h3 id="f1" class="h3" data-reveal>Today, at a glance</h3>
+          <p data-reveal style="--i:1">Open the app and see the day order, the class on now with its room and professor, and what comes next. Holidays, changed hours and special timings are already in.</p>
+          <ul class="ticks" data-reveal style="--i:2">
+            <li>The timetable by day order, for your class or for the hours you teach</li>
+            <li>The college calendar with events, holidays and shared birthdays</li>
+            <li>A reminder before each class, if you want one</li>
+          </ul>
+        </div>
+        <figure class="row-media"><div class="phone" data-reveal><img src="assets/screens/timetable.webp" width="824" height="1830" alt="Timetable for II BBA A: day orders A to F with C chosen, and its six hours from Marketing at 9:00 to Business Communication at 2:20, with the breaks between" loading="lazy" decoding="async"></div></figure>
+      </article>
+
+      <article class="row" aria-labelledby="f2">
+        <div class="row-text">
+          <h3 id="f2" class="h3" data-reveal>Assignments, handed in and marked</h3>
+          <p data-reveal style="--i:1">Professors set an assignment for a class or an elective. Students hand in photos of the pages or a PDF from the app, or on paper, and see their marks when they’re given.</p>
+          <ul class="ticks" data-reveal style="--i:2">
+            <li>Marks out of any total, one by one or for the whole class at once</li>
+            <li>Who handed in and who didn’t, shared as an Excel list</li>
+            <li>A notification when it’s set, and when it’s marked</li>
+          </ul>
+        </div>
+        <figure class="row-media"><div class="phone" data-reveal><img src="assets/screens/marks.webp" width="824" height="1830" alt="A professor's assignment page: due Sun, 22 Nov, Out of 10, buttons to Enter marks and Share as Excel, and the three students: 8.5 / 10, Handed in, Not yet" loading="lazy" decoding="async"></div></figure>
+      </article>
+
+      <article class="row" aria-labelledby="f3">
+        <div class="row-text">
+          <h3 id="f3" class="h3" data-reveal>Announcements that reach everyone</h3>
+          <p data-reveal style="--i:1">Post to the whole department, one class or your mentees, with a picture, links or a poll. Posts from the department admin carry an Admin badge, and a class rep can post to their own class.</p>
+          <ul class="ticks" data-reveal style="--i:2">
+            <li>Pin what matters, or schedule it for the morning</li>
+            <li>Polls with the counts shown after you vote</li>
+            <li>Notifications on Android and on the iPhone web app</li>
+          </ul>
+        </div>
+        <figure class="row-media"><div class="phone" data-reveal><img src="assets/screens/announcements.webp" width="824" height="1830" alt="Announcements: a pinned post from Dr. R. Meena with a blue Admin badge, a poll about the industrial visit, and a class post from Priya Ramesh with a gold Class rep badge" loading="lazy" decoding="async"></div></figure>
+      </article>
+
+      <article class="row" aria-labelledby="f4">
+        <div class="row-text">
+          <h3 id="f4" class="h3" data-reveal>A mentor for every student</h3>
+          <p data-reveal style="--i:1">Each student has a professor as their mentor. Meetings, tasks, goals and check-ins live in one place, and a student can say “I need to talk” without waiting for the next meeting.</p>
+          <ul class="ticks" data-reveal style="--i:2">
+            <li>Meeting notes that only the mentor can read</li>
+            <li>Goals with small steps, and a weekly check-in</li>
+            <li>A mentoring report as a PDF for the department</li>
+          </ul>
+        </div>
+        <figure class="row-media"><div class="phone" data-reveal><img src="assets/screens/mentoring.webp" width="824" height="1830" alt="A mentor's Mentoring tab: three mentees, a request to talk this week, two leave applications to decide, a meeting coming up at 2:20 pm, and the list of mentees" loading="lazy" decoding="async"></div></figure>
+      </article>
+
+      <article class="row" aria-labelledby="f5">
+        <div class="row-text">
+          <h3 id="f5" class="h3" data-reveal>Your marks, plainly</h3>
+          <p data-reveal style="--i:1">Every assignment shows where you stand: due in three days, handed in, seen, or your marks out of the total, with your professor’s remark.</p>
+        </div>
+        <figure class="row-media"><div class="phone" data-reveal><img src="assets/screens/assignments.webp" width="824" height="1830" alt="A student's Assignments: two to do, due in 3 days and in 6 days, and Problem set 2 handed in with marks of 18 out of 25" loading="lazy" decoding="async"></div></figure>
+      </article>
+    </div>
+  </section>
+
+  <!-- Everything else -->
+  <section class="section wrap" aria-labelledby="more-title">
+    <div class="head">
+      <h2 id="more-title" class="h2" data-reveal>And the rest of college life</h2>
+    </div>
+    <dl class="more" data-reveal style="--i:1">
+      <div><dt>Leave and on-duty</dt><dd>Apply with the dates and a reason. Your mentor or the admin decides, and you’re told.</dd></div>
+      <div><dt>Study materials</dt><dd>Notes, PDFs and videos by subject, from your professors.</dd></div>
+      <div><dt>Certificate wallet</dt><dd>Every certificate you earn, kept in one place, with its kind and level.</dd></div>
+      <div><dt>Your resume</dt><dd>Fill in a few things and share a PDF, in a Classic, Modern or Simple style.</dd></div>
+      <div><dt>Attendance with a code</dt><dd>Professors tap the roll, or students tap in with a code that changes every 20 seconds.</dd></div>
+      <div><dt>GPS camera</dt><dd>Photos with a map, the address, coordinates, the time and a note. For NSS camps and field visits.</dd></div>
+      <div><dt>Notes</dt><dd>Your own notes, with colours and pins. Only you can see them.</dd></div>
+      <div><dt>Calm</dt><dd>A quiet space to breathe and steady yourself before an exam.</dd></div>
+      <div><dt>Events and electives</dt><dd>Sign up for events, give feedback, and see your elective’s hours.</dd></div>
+      <div><dt>Blood donors</dt><dd>When someone needs blood, professors find willing donors quickly.</dd></div>
+      <div><dt>App lock</dt><dd>Your fingerprint, face or screen lock keeps the app closed.</dd></div>
+      <div><dt>Works on a slow day</dt><dd>Today, the timetable and the calendar open with the last copy you saw.</dd></div>
+    </dl>
+  </section>
+
+  <!-- After college -->
+  <section id="alumni" class="section wrap" aria-labelledby="alumni-title">
+    <div class="head">
+      <h2 id="alumni-title" class="h2" data-reveal>After college, still part of it</h2>
+      <p data-reveal style="--i:1">Final-year students become alumni and keep their account. Older batches can join too.</p>
+    </div>
+    <dl class="more" data-reveal style="--i:1">
+      <div><dt>My career</dt><dd>Alumni tell the department what they do now: higher studies, exams, a job or a business. It makes the IQAC report easy.</dd></div>
+      <div><dt>Messages</dt><dd>Alumni and professors chat once both agree. Block, delete and report are always there.</dd></div>
+      <div><dt>Alumni mentors</dt><dd>Students ask seniors about jobs, exams and higher studies. Professors see who mentors whom, never the messages.</dd></div>
+      <div><dt>Rooms and meets</dt><dd>A room for each batch, and alumni meets with RSVPs, date votes and reminders. The admins approve and keep it friendly.</dd></div>
+    </dl>
+    <p class="actions" data-reveal style="--i:2"><a class="link" href="docs/alumni.html">How alumni use Mentor Heart</a></p>
+  </section>
+
+  <!-- How to join -->
+  <section id="join" class="section wrap" aria-labelledby="join-title">
+    <div class="head">
+      <h2 id="join-title" class="h2" data-reveal>How to join</h2>
+      <p data-reveal style="--i:1">Mentor Heart is for people in a department. Only those on its lists can register, so strangers can’t get in.</p>
+    </div>
+    <ol class="steps" data-reveal style="--i:1">
+      <li><strong>Your department adds you</strong><p>Professors load each class’s D.No.s, and the admin keeps the staff list with staff IDs.</p></li>
+      <li><strong>Register in the app</strong><p>Choose your department and your D.No. or staff ID, and set a password.</p></li>
+      <li><strong>The admin lets you in</strong><p>Once your department admin approves you, sign in with your D.No. or staff ID.</p></li>
+    </ol>
+    <p class="steps-note" data-reveal style="--i:2">A department new to Mentor Heart is set up by one of its professors, with a code from Inigo. <a class="link" href="mailto:inigo@tosstheworld.org?subject=Mentor%20Heart%20for%20my%20department">Write to ask for one.</a></p>
+  </section>
+
+  <!-- iPhone -->
+  <section id="iphone" class="section wrap" aria-labelledby="iphone-title">
+    <div class="iphone">
+      <div class="head">
+        <h2 id="iphone-title" class="h2" data-reveal>On an iPhone</h2>
+        <p data-reveal style="--i:1">There’s no App Store version. Mentor Heart runs as a web app instead: add it to your Home Screen once, and it opens like any other app.</p>
+        <p class="actions" data-reveal style="--i:2"><a class="address" href="https://mh.inigo.co.in">mh.inigo.co.in</a></p>
+      </div>
+      <ol class="steps" data-reveal style="--i:1">
+        <li><strong>Open mh.inigo.co.in in Safari</strong><p>It has to be Safari: that’s where iPhones add web apps to the Home Screen.</p></li>
+        <li><strong>Tap Share, then Add to Home Screen</strong><p>The Share button is the square with an arrow, at the bottom of the screen. Scroll down the list to find Add to Home Screen.</p></li>
+        <li><strong>Open it from the Home Screen and sign in</strong><p>It keeps its own sign-in, apart from Safari. Allow notifications to get announcements and marks as they come.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Get it -->
+  <section id="get" class="section wrap" aria-labelledby="get-title">
+    <div class="get">
+      <div class="head">
+        <h2 id="get-title" class="h2" data-reveal>Get Mentor Heart</h2>
+        <p data-reveal style="--i:1">Free on Google Play for Android phones, and as a web app on iPhones and computers. Install it, then register with your D.No. or staff ID.</p>
+      </div>
+      <div class="ways">
+        <a class="way way-main" href="https://play.google.com/store/apps/details?id=com.inigocode.mentorheart" data-reveal><img src="assets/icon.png" width="48" height="48" alt=""><span><strong>Get it on Google Play</strong><span>For Android phones, free</span></span><span class="go">Open</span></a>
+        <a class="way" href="https://mh.inigo.co.in" data-reveal style="--i:1"><span class="way-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M16.37 12.75c-.02-2.2 1.8-3.26 1.88-3.31-1.03-1.5-2.62-1.7-3.18-1.73-1.35-.14-2.64.8-3.33.8-.69 0-1.74-.78-2.87-.76-1.47.02-2.83.86-3.59 2.18-1.53 2.66-.39 6.6 1.1 8.75.73 1.05 1.6 2.24 2.73 2.2 1.1-.04 1.51-.71 2.84-.71 1.32 0 1.7.71 2.86.69 1.18-.02 1.93-1.07 2.65-2.13.84-1.22 1.18-2.4 1.2-2.46-.03-.01-2.27-.87-2.29-3.52zM14.2 6.28c.6-.73 1.01-1.75.9-2.76-.87.04-1.92.58-2.54 1.31-.56.64-1.05 1.67-.92 2.66.97.07 1.96-.5 2.56-1.21z"/></svg></span><span><strong>Open the web app</strong><span>mh.inigo.co.in, for iPhones and computers</span></span><span class="go">Open</span></a>
+        <a class="way" href="https://mh.inigo.co.in/mentorheart.apk" data-reveal style="--i:2"><span class="way-mark" aria-hidden="true">APK</span><span><strong>Or download the APK</strong><span>mentorheart.apk, for phones without Google Play</span></span><span class="go">Download</span></a>
+        <p class="way-help" data-reveal style="--i:3">The APK needs Android 7.0 or newer. <a class="link" href="docs/getting-started.html#apk-wont-install">Won’t install? See the fixes</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Your data, plainly -->
+  <section id="data" class="section wrap" aria-labelledby="data-title">
+    <div class="head">
+      <h2 id="data-title" class="h2" data-reveal>Kept for your department, and no one else</h2>
+      <p data-reveal style="--i:1">Mentor Heart has no ads and no tracking. What you add is kept for your department’s mentoring and academic work.</p>
+    </div>
+    <dl class="more" data-reveal style="--i:1">
+      <div><dt>Each department apart</dt><dd>A department sees only its own people and records. Nobody in another department can see yours.</dd></div>
+      <div><dt>Students see their own</dt><dd>A student sees their own records, their class’s posts and their professors. Never a classmate’s marks or meetings.</dd></div>
+      <div><dt>Private notes stay private</dt><dd>A mentor’s meeting notes are read by that mentor alone.</dd></div>
+      <div><dt>Chats are for the two of you</dt><dd>Only the people in a chat read it. If someone reports a message, the admins see that message and the two before it, nothing more.</dd></div>
+    </dl>
+    <p class="actions" data-reveal style="--i:2"><a class="link" href="privacy.html">Read the privacy policy</a></p>
+  </section>
+
+  <!-- A note from the maker -->
+  <section class="section wrap" aria-labelledby="note-title">
+    <div class="note">
+      <h2 id="note-title" class="h2" data-reveal>A note from Inigo</h2>
+      <div data-reveal style="--i:1">
+        <div class="copy">
+          <p>I teach Business Administration at St. Joseph’s College, Tiruchirappalli, and I’m a mentor to my own students. I made Mentor Heart for our department first: the day order, the timetable and mentoring, in the one place students already look.</p>
+          <p>There are no ads and nothing to buy. If something is wrong, or your department wants to use it, write to me. I read everything.</p>
+        </div>
+        <p class="actions"><a class="button button-tone" href="mailto:inigo@tosstheworld.org?subject=Mentor%20Heart">Write to Inigo</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Questions -->
+  <section id="questions" class="section wrap" aria-labelledby="faq-title">
+    <div class="faq">
+      <div class="head"><h2 id="faq-title" class="h2" data-reveal>Questions</h2></div>
+      <div class="faq-list" data-reveal style="--i:1">
+        <details name="faq" open><summary>Is it free?</summary><p>Yes: no ads, no subscriptions and nothing to buy.</p></details>
+        <details name="faq"><summary>Who can use it?</summary><p>Students and professors of a department that uses Mentor Heart. Your department adds your D.No. or staff ID to its list; then you register in the app and the admin approves you.</p></details>
+        <details name="faq"><summary>Is there an iPhone app?</summary><p>Not in the App Store. On an iPhone, open <a class="link" href="https://mh.inigo.co.in">mh.inigo.co.in</a> in Safari and add it to your Home Screen. It does nearly everything the Android app does, notifications included.</p></details>
+        <details name="faq"><summary>Can I use it on a computer?</summary><p>Yes. Open <a class="link" href="https://mh.inigo.co.in">mh.inigo.co.in</a> in any browser and sign in. It’s handy for professors entering marks or posting announcements.</p></details>
+        <details name="faq"><summary>Is it on Google Play?</summary><p>Yes. <a class="link" href="https://play.google.com/store/apps/details?id=com.inigocode.mentorheart">Get Mentor Heart on Google Play</a>; it updates itself through the Play Store. The APK on this page is the same app, for phones without Google Play. If you installed the APK earlier, it keeps working and updates itself.</p></details>
+        <details name="faq"><summary>Android says the APK is from an unknown source. Is that safe?</summary><p>The APK doesn’t come from Google Play, so Android asks once whether to allow the install. Download it only from this page or the <a class="link" href="https://github.com/inigo-code/mentor-heart-releases/releases">releases page on GitHub</a>, where every version is listed with its notes. Or use Google Play instead.</p></details>
+        <details name="faq"><summary>The APK says “App not installed” or “Invalid package”.</summary><p>The app needs Android 7.0 or newer; on older phones, use the web app at <a class="link" href="https://mh.inigo.co.in">mh.inigo.co.in</a>. The APK also can’t replace a Mentor Heart installed from Google Play. Otherwise the download may be broken: download it again in Chrome, not inside WhatsApp. <a class="link" href="docs/getting-started.html#apk-wont-install">All the fixes</a></p></details>
+        <details name="faq"><summary>I forgot my password.</summary><p>Ask your department admin. They can set a new password for you.</p></details>
+        <details name="faq"><summary>How do updates arrive?</summary><p>Smaller improvements arrive by themselves and ask you to restart. New versions come through Google Play; if you installed the APK, the app tells you and installs it from Settings › Updates. Your records stay. The web app is always the newest.</p></details>
+        <details name="faq"><summary>Where can I learn how to use it?</summary><p>The <a class="link" href="docs/">Help pages</a> explain every feature for students, professors, mentors, class reps, admins and heads of department, with a search. Inside the app, open More › Help.</p></details>
+        <details name="faq"><summary>How do I delete my account?</summary><p>In the app: Profile, Delete my account. See the <a class="link" href="privacy.html#delete">privacy policy</a> for what happens to your records.</p></details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p class="foot-name" aria-hidden="true">Mentor Heart</p>
+    <div class="foot-cols">
+      <nav aria-label="App"><h2>App</h2><a href="https://play.google.com/store/apps/details?id=com.inigocode.mentorheart">Google Play</a><a href="https://mh.inigo.co.in/mentorheart.apk">Download the APK</a><a href="https://mh.inigo.co.in">Web app for iPhone</a><a href="https://github.com/inigo-code/mentor-heart-releases/releases">Releases</a><a href="docs/">Help and guides</a></nav>
+      <nav aria-label="Your data"><h2>Your data</h2><a href="privacy.html">Privacy policy</a><a href="privacy.html#delete">Delete your account</a></nav>
+      <nav aria-label="Also by Inigo"><h2>Also by Inigo</h2><a class="to-app" href="https://heartapps.github.io/prompt-heart/"><img src="assets/prompt-heart.png" width="24" height="24" alt="">Prompt Heart</a><a class="to-app" href="https://heartapps.github.io/watch-heart/"><img src="assets/watch-heart.png" width="24" height="24" alt="">Watch Heart</a><a class="to-app" href="https://heartapps.github.io/kural-heart/"><img src="assets/kural-heart.png" width="24" height="24" alt="">Kural Heart</a><a class="to-app" href="https://heartapps.github.io/frame-heart/"><img src="assets/frame-heart.svg" width="24" height="24" alt="">Frame Heart</a><a class="to-app" href="https://heartapps.github.io/still-heart/"><img src="assets/still-heart.svg" width="24" height="24" alt="">Still Heart</a><a class="to-app" href="https://heartapps.github.io/rush-heart/"><img src="assets/rush-heart.svg" width="24" height="24" alt="">Rush Heart</a><a class="to-home" href="https://heartapps.github.io/"><img src="assets/heart-apps.svg" width="20" height="20" alt="">Heart Apps</a></nav>
+      <nav aria-label="Contact"><h2>Contact</h2><a href="mailto:inigo@tosstheworld.org?subject=Mentor%20Heart">inigo@tosstheworld.org</a></nav>
+    </div>
+    <div class="foot-last"><p>© 2026 Inigo. Free, with no ads.</p><a href="#top">Back to the top</a></div>
+  </div>
+</footer>
+
+<script src="heart.js" defer></script>
+</body>
+</html>
